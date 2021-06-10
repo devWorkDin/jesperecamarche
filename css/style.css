@@ -1,0 +1,274 @@
+
+
+	html{
+	    font-size: 62.5%;
+	}
+
+	body{
+	    font-family: 'Audiowide', cursive;
+	        font: 1.6rem;
+	    background-repeat: no-repeat;
+	    background-size: contain;
+	        margin: 0;
+	}
+
+	h1,h2,h3,p,ul,ol,a,th,figure{
+        text-decoration: none;
+	    margin: 0;
+	    list-style: none;
+	    padding: 0;
+	    font-weight: 400;
+	}
+
+
+*{
+        box-sizing: border-box;
+}
+main{
+    cursor: pointer;
+    display: grid;
+    gap: .5rem;
+    transition: 0.3s;
+
+    grid-template-columns: repeat(2,1fr);
+}
+
+.main{
+    display: grid;
+    gap: .5rem;
+    transition: 0.3s;
+
+    grid-template-columns: repeat(1,1fr);
+}
+.space{
+    width: 2rem;
+}
+
+
+.uno{
+    
+    background-image: url(../asset/hommeroux.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    
+    width: 100%;
+    height: 100vh;
+    transition: all .5s;
+
+}
+
+.deux{
+
+    
+    background-image: url(../asset/femmewallp.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-position: bottom -90px right -200px;    width: 100%;
+
+    background-color: rgb(147, 182, 184);
+
+
+    height: 100vh;
+    transition: all .5s;
+
+
+}
+    /*Effet de zoom hover*/
+
+
+div a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 4.5em;
+}
+.femme{
+    display: none;
+}
+
+.homme1{
+    display: none;
+}
+.femme1{
+    
+    background-image: url(../asset/femmewallp.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom -90px right -00px;
+    background-size:cover;
+    transition: all ease-in-out .5s;
+    animation:  slideh linear .3s ;
+}
+
+.homme{
+
+    background-image: url(../asset/hommeroux.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    transition: all ease-in-out .5s;
+    animation:  slideh linear .3s ;}
+
+@keyframes slideh{
+    0%{
+        width: 0vh;
+    }
+    100%{
+    width: 100%;
+    }
+}
+
+@keyframes slidef{
+    0%{
+        width: 100vh;
+    }
+    100%{
+        width: 0vh;  
+    }
+
+}
+/*
+.uno:hover{
+    transform: scale(1.5);
+    transition: all .5s;
+}    
+*/
+
+
+footer{
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    height: 20vh;
+}
+footer ul{
+    margin-top: 6rem;
+}
+footer ul li{
+    padding-left: 5rem;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 1.2rem;
+    color: black;
+    text-align: justify;
+    font-size: 1.4rem;
+}
+@media screen and (max-width:60rem){
+    
+    main{
+        display: grid;
+    
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .uno{
+        width: 100%;
+        height: 50vh;
+        background-image: url(../asset/hommeroux.jpeg);
+
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom 40px right -330px;  
+
+    }
+    
+    
+  
+    p{
+        text-align: center;
+        font-size: 3.3em;
+    
+    }
+    .deux{
+
+        background-image: url(../asset/femmewallp.jpeg);
+        background-size: cover;
+        background-position: bottom -0px right -450px;  
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        width: 100%;
+        height: 50vh;
+        background-color: rgb(147, 182, 184);
+    
+    }
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        height: 20vh;
+    }
+    footer ul li{
+        text-align: center;
+        padding-left: 1rem;
+        width: 100%;
+        font-family: 'Courier New', Courier, monospace;
+        font: bolder;
+        padding-top: 1.2rem;
+        color: black;
+        font-size: 1.1rem;
+    }
+    footer ul{
+        margin-top: 6rem;
+    }
+}
+
+
+
+
+@media screen and (orientation:landscape){
+
+    main{
+        display: grid;
+    
+        grid-template-columns: repeat(2,1fr);
+    }
+    .deux{
+
+        background-image: url(../asset/femmewallp.jpeg);
+        background-size: cover;
+        background-position: bottom -50px right -250px;  
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        width: 100%;
+        height: 50vh;
+        background-color: rgb(147, 182, 184);
+    
+    }
+    .uno{
+        width: 100%;
+        height: 50vh;
+        background-image: url(../asset/hommeroux.jpeg);
+
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom 40px right 140px;  
+
+    }
+    .homme{
+
+        background-image: url(../asset/hommeroux.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: bottom 40px right 0px;  
+
+        transition: all ease-in-out .5s;
+        animation:  slideh linear .3s ;}
+
+        .femme1{
+    
+            background-image: url(../asset/femmewallp.jpeg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: bottom -0px right -00px;
+            background-size:cover;
+            transition: all ease-in-out .5s;
+            animation:  slideh linear .3s ;
+        }
+}
