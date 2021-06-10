@@ -10,13 +10,17 @@ document.addEventListener("DOMContentLoaded",()=>{
         main.classList.toggle("main")
         femme.classList.toggle("femme")
         console.log(femme)
+        document.location.href="https://hollyghost.fr/fr/11-homme";
     })
 
 
     femme.addEventListener("click",()=>{
+        document.location.href="https://hollyghost.fr/fr/3-femme";
+
         homme.classList.toggle("homme1")
         main.classList.toggle("main")
         femme.classList.toggle("femme1")
+        
 
     })
 }) 

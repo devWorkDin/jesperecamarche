@@ -6,7 +6,7 @@
 
 	body{
 	    font-family: 'Audiowide', cursive;
-	        font: 1.6rem;
+	    font: 1.6rem;
 	    background-repeat: no-repeat;
 	    background-size: contain;
 	        margin: 0;
@@ -51,8 +51,8 @@ main{
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;
-    
-    width: 100%;
+    background-position: bottom 0px right -200px;    
+    width: 100vw;
     height: 100vh;
     transition: all .5s;
 
@@ -61,17 +61,17 @@ main{
 .deux{
 
     
-    background-image: url(../asset/femmewallp.jpeg);
+    background-image: url(../asset/femmewalp.jpeg);
     background-attachment: fixed;
     background-size: cover;
 
     background-repeat: no-repeat;
-    background-position: bottom -90px right -200px;    width: 100%;
+    background-position: bottom -90px right -200px;    
 
     background-color: rgb(147, 182, 184);
 
 
-    height: 100vh;
+    height: 50vh;
     transition: all .5s;
 
 
@@ -106,12 +106,15 @@ div a {
 .homme{
 
     background-image: url(../asset/hommeroux.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: 100vh;
     background-attachment: fixed;
+    background-position: bottom 120rem right -200px;    
+
+    animation:  slidef linear .3s ;
     
-    transition: all ease-in-out .5s;
-    animation:  slideh linear .3s ;}
+    transition: all .5s;
+}
 
 @keyframes slideh{
     0%{
@@ -131,6 +134,8 @@ div a {
     }
 
 }
+
+
 /*
 .uno:hover{
     transform: scale(1.5);
@@ -158,7 +163,7 @@ footer ul li{
     text-align: justify;
     font-size: 1.4rem;
 }
-@media screen and (max-width:60rem){
+@media (max-width:60rem){
     
     main{
         display: grid;
@@ -177,6 +182,32 @@ footer ul li{
         background-position: bottom 40px right -330px;  
 
     }
+   
+    .femme1{
+        
+        background-image: url(../asset/femmewallp.jpeg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: bottom -90px right -00px;
+        background-size:cover;
+        transition: all ease-in-out .5s;
+        height: 100vh;
+
+        animation:  hautf linear .3s ;
+
+
+    }
+    
+    .homme{
+    
+        background-image: url(../asset/hommeroux.jpeg);
+        background-repeat: repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+        transition: all ease-in-out .5s;
+        animation:  hautf linear .3s ;
+    }
     
     
   
@@ -189,7 +220,7 @@ footer ul li{
 
         background-image: url(../asset/femmewallp.jpeg);
         background-size: cover;
-        background-position: bottom -0px right -450px;  
+        background-position: bottom -20px right -450px;  
         background-repeat: no-repeat;
         background-attachment:fixed;
         width: 100%;
@@ -220,7 +251,7 @@ footer ul li{
 
 
 
-@media screen and (orientation:landscape){
+@media (orientation:landscape){
 
     main{
         display: grid;
@@ -231,23 +262,23 @@ footer ul li{
 
         background-image: url(../asset/femmewallp.jpeg);
         background-size: cover;
-        background-position: bottom -50px right -250px;  
+        background-position: bottom -0px right -250px;  
         background-repeat: no-repeat;
         background-attachment:fixed;
         width: 100%;
-        height: 50vh;
+        height: 100vh;
         background-color: rgb(147, 182, 184);
     
     }
     .uno{
         width: 100%;
-        height: 50vh;
+        height: 100vh;
         background-image: url(../asset/hommeroux.jpeg);
 
         background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: bottom 40px right 140px;  
+        background-position: bottom -0px right 140px;  
 
     }
     .homme{
@@ -261,7 +292,8 @@ footer ul li{
         transition: all ease-in-out .5s;
         animation:  slideh linear .3s ;}
 
-        .femme1{
+
+    .femme1{
     
             background-image: url(../asset/femmewallp.jpeg);
             background-repeat: no-repeat;
